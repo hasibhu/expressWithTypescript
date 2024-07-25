@@ -15,11 +15,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = __importDefault(require("./app"));
 const PORT = 3008;
 let server;
-function bootstrap() {
+function expressServer() {
     return __awaiter(this, void 0, void 0, function* () {
         server = app_1.default.listen(PORT, () => {
             console.log(`Example app listening on port ${PORT}`);
         });
     });
 }
-bootstrap();
+expressServer();

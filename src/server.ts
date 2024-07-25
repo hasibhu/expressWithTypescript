@@ -5,10 +5,10 @@ const PORT = 3008;
 
 let server : Server
 
-async function bootstrap() {
+async function expressServer() {
    server = app.listen(PORT, () => {
         console.log(`Example app listening on port ${PORT}`)
     })
 }
 
-bootstrap();
+expressServer();
